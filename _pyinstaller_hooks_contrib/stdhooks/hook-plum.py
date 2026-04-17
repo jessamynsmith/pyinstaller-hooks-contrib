@@ -14,5 +14,4 @@ from PyInstaller.utils.hooks import collect_submodules
 
 # plum-dispatch uses `mypyc`, and includes a top-level module with
 # dynamically-generated name prefix; e.g., `ddc459050edb75a05942__mypyc`.
-hiddenimports = collect_submodules('plum')
-hiddenimports += find_mypyc_module_for_dist('plum-dispatch')
+hiddenimports = find_mypyc_module_for_dist('plum-dispatch')
